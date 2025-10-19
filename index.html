@@ -8,13 +8,17 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/style-basic.css">
 <link rel="stylesheet" href="css/animate-header.css">
+<link rel="stylesheet" href="css/boton.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="home-a"><img class="logo" src="assets/logo-ipp.png" alt=""></a>
     <!-- barra de navegacion -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -31,7 +35,7 @@
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- sidebar para movil-->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -41,9 +45,7 @@
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
-<!-- Header con imagen de fondo -->
-
-
+<!-- Header con animacion-->
 
 <header id="home">
   <section class="cloud-section">
@@ -72,55 +74,194 @@
     </div>
 
     <div class="w3-display-left w3-text-white content" style="padding:48px">
-      <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-      <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+      <span class="w3-jumbo w3-hide-small">Informatica Profesional y Personal</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Informatica Profesional y Personal</span><br>
+      <span class="w3-large">Pensado para abrirte las puertas al futuro.</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Saber Mas</a></p>
     </div> 
   </section>
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+  <h3 class="w3-center">Acerca de la Tecnicatura</h3>
+  <p class="w3-center w3-large">¿Por qué elegirnos?</p>
+  
   <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <!-- Tecnología y Herramientas -->
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Tecnología a tu alcance</p>
+      <p>Aprendé a programar en Python, crear páginas web con HTML y CSS, y usar herramientas modernas para proyectos reales. ¡Todo lo que necesitás para brillar en informática!</p>
     </div>
+
+    <!-- Pasión y Creatividad -->
     <div class="w3-quarter">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Pasión por crear</p>
+      <p>Fomentamos tu creatividad: desde juegos hasta aplicaciones, tus ideas toman vida y podés compartirlas con el mundo. ¡Programar nunca fue tan divertido!</p>
     </div>
+
+    <!-- Diseño y Experiencia -->
     <div class="w3-quarter">
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Diseño que impresiona</p>
+      <p>Aprendé a diseñar interfaces atractivas y experiencias digitales amigables. Hacemos que tus proyectos no solo funcionen, ¡sino que luzcan increíbles!</p>
     </div>
+
+    <!-- Proyectos y Acción -->
     <div class="w3-quarter">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Manos a la obra</p>
+      <p>Construí apps, experimentá con robots o automatizá tareas. Cada proyecto es una aventura y una oportunidad de aprender haciendo. ¡Nada de aburrirse!</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="w3-container w3-light-grey w3-border"  style="padding:32px 16px;">
+  <div class="w3-row-padding w3-center plan-estudio">
+    <div class="w3-col m6">
+      <h3>Plan de Estudios</h3>
+      <div class="w3-container w3-center w3-padding-16 contenedor-botones">
+        
+        <!-- Botón 3er Año -->
+        <div class="boton-con-texto">
+          <div class="mario-block expandable-button">
+            <span class="block-symbol">?</span>
+            <span class="dot top-left"></span>
+            <span class="dot top-right"></span>
+            <span class="dot bottom-left"></span>
+            <span class="dot bottom-right"></span>
+            <div class="button-content">
+              <div class="info">
+                <p><strong>3er Año</strong></p>
+                <ul class="w3-large">
+                  <li><strong>Lengua y Literatura:</strong> estudio de textos, comprensión y expresión.</li>
+                  <li><strong>Geografía:</strong> análisis del espacio geográfico y sus dinámicas.</li>
+                  <li><strong>Historia:</strong> estudio de hechos, procesos y contextos históricos.</li>
+                  <li><strong>Lengua Extranjera - Inglés:</strong> comunicación básica y comprensión del idioma.</li>
+                  <li><strong>Formación Ética y Ciudadana:</strong> valores, normas y convivencia social.</li>
+                  <li><strong>Educación Física:</strong> actividad física, deportes y bienestar personal.</li>
+                  <li><strong>Matemática:</strong> conceptos y operaciones fundamentales.</li>
+                  <li><strong>Física Aplicada:</strong> principios físicos y sus aplicaciones prácticas.</li>
+                  <li><strong>Química Aplicada:</strong> fundamentos químicos y experimentos básicos.</li>
+                  <li><strong>Informática Aplicada:</strong> introducción a software y hardware.</li>
+                  <li><strong>Dibujo Técnico y Representación Gráfica:</strong> dibujo, planos y esquemas.</li>
+                  <li><strong>Seguridad e Higiene y Protección Ambiental:</strong> normas de seguridad y cuidado ambiental.</li>
+                  <br>
+                  <li><strong>Laboratorio de Electricidad - Electrónica:</strong> prácticas y circuitos básicos.</li>
+                  <li><strong>Laboratorio de Introducción al Hardware:</strong> ensamblado y configuración de equipos.</li>
+                  <li><strong>Laboratorio de Introducción a la Lógica y Algoritmos:</strong> bases de programación y lógica computacional.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="boton-titulo">3er Año</h3>
+        </div>
+
+        <!-- Botón 4to Año -->
+        <div class="boton-con-texto">
+          <div class="mario-block expandable-button">
+            <span class="block-symbol">?</span>
+            <span class="dot top-left"></span>
+            <span class="dot top-right"></span>
+            <span class="dot bottom-left"></span>
+            <span class="dot bottom-right"></span>
+            <div class="button-content">
+              <div class="info">
+                <p><strong>4to Año</strong></p>
+                <ul class="w3-large">
+                  <li><strong>Lengua y Literatura:</strong> análisis literario y expresión escrita avanzada.</li>
+                  <li><strong>Lengua Extranjera - Inglés Técnico:</strong> comprensión y uso técnico del idioma.</li>
+                  <li><strong>Educación Física:</strong> actividad física y entrenamiento orientado a objetivos.</li>
+                  <li><strong>Matemática:</strong> conceptos avanzados y resolución de problemas.</li>
+                  <li><strong>Ensayos y Evaluación de Sistemas con Entornos de Simulación:</strong> práctica de sistemas y simulaciones.</li>
+                  <li><strong>Tecnología de la Representación Gráfica e Interpretación de Planos:</strong> técnicas de dibujo técnico y planos.</li>
+                  <li><strong>Tecnología de los Materiales:</strong> estudio de materiales y sus propiedades.</li>
+                  <li><strong>Instalación de Equipos Informáticos:</strong> armado y configuración de hardware.</li>
+                  <li><strong>Asistencia sobre Utilitarios:</strong> manejo de software profesional y herramientas informáticas.</li>
+                  <li><strong>Introducción a la Programación:</strong> conceptos básicos y lógica computacional.</li>
+                  <li><strong>Introducción al Diseño Multimedial:</strong> HTML, CSS y diseño de interfaces.</li>
+                  <li><strong>Introducción a Bases de Datos:</strong> estructuras y consultas básicas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="boton-titulo">4to Año</h3>
+        </div>
+
+        <!-- Botón 5to Año -->
+        <div class="boton-con-texto">
+          <div class="mario-block expandable-button">
+            <span class="block-symbol">?</span>
+            <span class="dot top-left"></span>
+            <span class="dot top-right"></span>
+            <span class="dot bottom-left"></span>
+            <span class="dot bottom-right"></span>
+            <div class="button-content">
+              <div class="info">
+                <p><strong>5to Año</strong></p>
+                <ul class="w3-large">
+                  <li><strong>Lengua Extranjera - Inglés Técnico:</strong> comunicación profesional y técnica.</li>
+                  <li><strong>Educación Física:</strong> desarrollo físico y competencias deportivas.</li>
+                  <li><strong>Análisis Matemático:</strong> cálculo y modelado matemático.</li>
+                  <li><strong>Economía:</strong> fundamentos económicos y finanzas básicas.</li>
+                  <li><strong>Instalación y Reemplazo de Componentes Internos:</strong> mantenimiento y reparación de hardware.</li>
+                  <li><strong>Redes de Comunicaciones:</strong> fundamentos de redes y protocolos.</li>
+                  <li><strong>Instalación y Configuración de Software:</strong> sistemas operativos y aplicaciones.</li>
+                  <li><strong>Diseño de Aplicaciones Informáticas I:</strong> programación inicial y creación de apps.</li>
+                  <li><strong>Asistencia sobre Aplicaciones Específicas:</strong> software especializado.</li>
+                  <li><strong>Programación:</strong> desarrollo de algoritmos y código funcional.</li>
+                  <li><strong>Práctica Profesionalizante I:</strong> proyectos prácticos y experiencias laborales.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="boton-titulo">5to Año</h3>
+        </div>
+
+        <!-- Botón 6to Año -->
+        <div class="boton-con-texto">
+          <div class="mario-block expandable-button">
+            <span class="block-symbol">?</span>
+            <span class="dot top-left"></span>
+            <span class="dot top-right"></span>
+            <span class="dot bottom-left"></span>
+            <span class="dot bottom-right"></span>
+            <div class="button-content">
+              <div class="info">
+                <p><strong>6to Año</strong></p>
+                <ul class="w3-large">
+                  <li><strong>Lengua Extranjera - Inglés Técnico:</strong> dominio avanzado del inglés aplicado a tecnología.</li>
+                  <li><strong>Educación Física:</strong> entrenamiento físico y salud integral.</li>
+                  <li><strong>Marco Jurídico:</strong> leyes y regulaciones aplicadas a la informática.</li>
+                  <li><strong>Gestión de los Procesos Productivos:</strong> planificación y control de procesos.</li>
+                  <li><strong>Estadística:</strong> análisis de datos y probabilidades.</li>
+                  <li><strong>Mantenimiento y Manejo de Datos:</strong> administración de información y bases de datos.</li>
+                  <li><strong>Mantenimiento, Conversión y Reparación de Software:</strong> actualización y reparación de sistemas.</li>
+                  <li><strong>Programación Aplicada:</strong> desarrollo de software avanzado.</li>
+                  <li><strong>Diseño de Aplicaciones Informáticas II:</strong> proyectos y aplicaciones completas.</li>
+                  <li><strong>Gestión y Comercialización de Servicios Informáticos:</strong> aspectos empresariales y comerciales.</li>
+                  <li><strong>Laboratorio de Hardware:</strong> prácticas avanzadas de hardware.</li>
+                  <li><strong>Laboratorio de Software:</strong> prácticas avanzadas de software.</li>
+                  <li><strong>Prácticas Profesionalizantes II:</strong> proyectos finales y experiencias laborales.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="boton-titulo">6to Año</h3>
+        </div>
+
+      </div>
+
+      <p><a href="assets/MATERIAS 2.pdf" class="w3-button w3-black" target="_blank"><i class="fa fa-graduation-cap"></i> Más Información</a></p>
     </div>
   </div>
 </div>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
 
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
@@ -304,8 +445,9 @@
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
+
 <script src="js/menu.js"></script>
+<script src="js/boton.js"></script>
 
 </body>
 </html>

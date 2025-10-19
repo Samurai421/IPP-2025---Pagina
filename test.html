@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/test/test.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/test/test.css">
+  <link rel="stylesheet" href="css/w3.css">
 </head>
+
 <body>
-<!-- 🌤 Contenedor de ejemplo -->
-<section class="cloud-section">
-  <!-- Fondo modular -->
-  <div class="background-wrap">
-    <div class="bubble x1"><img src="assets/cloud-1.png" alt=""></div>
-    <div class="bubble x2"><img src="assets/cloud-1.png" alt=""></div>
-    <div class="bubble x3"><img src="assets/cloud-2.png" alt=""></div>
-    <div class="bubble x4"><img src="assets/cloud-1.png" alt=""></div>
-    <div class="bubble x5"><img src="assets/cloud-2.png" alt=""></div>
-    <div class="bubble x6"><img src="assets/cloud-2.png" alt=""></div>
-    <div class="bubble x7"><img src="assets/cloud-1.png" alt=""></div>
-    <div class="bubble x8"><img src="assets/cloud-2.png" alt=""></div>
-    <div class="bubble x9"><img src="assets/cloud-1.png" alt=""></div>
-    <div class="bubble x10"><img src="assets/cloud-1.png" alt=""></div>
-  </div>
+  <!-- 🌤 Contenedor de ejemplo -->
+  <section class="cloud-section">
+    <!-- Fondo modular -->
+    <div class="background-wrap">
+      <div class="bubble x1"><img src="assets/cloud-1.png" alt=""></div>
+      <div class="bubble x2"><img src="assets/cloud-1.png" alt=""></div>
+      <div class="bubble x3"><img src="assets/cloud-2.png" alt=""></div>
+      <div class="bubble x4"><img src="assets/cloud-1.png" alt=""></div>
+      <div class="bubble x5"><img src="assets/cloud-2.png" alt=""></div>
+      <div class="bubble x6"><img src="assets/cloud-2.png" alt=""></div>
+      <div class="bubble x7"><img src="assets/cloud-1.png" alt=""></div>
+      <div class="bubble x8"><img src="assets/cloud-2.png" alt=""></div>
+      <div class="bubble x9"><img src="assets/cloud-1.png" alt=""></div>
+      <div class="bubble x10"><img src="assets/cloud-1.png" alt=""></div>
+    </div>
 
-  <!-- Contenido de tu sección -->
-  <div class="content">
-    <h1>Encabezado de ejemplo</h1>
-    <p>Este fondo se adapta al contenedor.</p>
-  </div>
-</section>
+    <!-- Contenido de tu sección -->
+    <div class="content">
+      <h1>Encabezado de ejemplo</h1>
+      <p>Este fondo se adapta al contenedor.</p>
+    </div>
+  </section>
 
+<div class="w3-container w3-center w3-padding-16">
+    <div class="expandable-button mario-block shadow w3-animate-zoom">
+        <div class="button-content">
+            <strong>Info</strong>
+            <div class="info">
+                <p>Esta es información adicional que se muestra al expandir el botón. Puede ser larga y hacer scroll.</p>
+                <p>Más contenido...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-center w3-padding-16">
+    <div class="mario-block expandable-button">
+        <span class="block-symbol">?</span>
+        <!-- Los puntitos -->
+        <span class="dot top-left"></span>
+        <span class="dot top-right"></span>
+        <span class="dot bottom-left"></span>
+        <span class="dot bottom-right"></span>
+        <div class="button-content">
+            <div class="info">
+                <p>Esta es información adicional que se muestra al expandir el botón. Puede ser larga y hacer scroll.</p>
+                <p>Más contenido...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <script src="js/test/test.js"></script>
 </body>
+
 </html>

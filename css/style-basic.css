@@ -11,8 +11,39 @@ scroll-behavior: smooth;
 
 .w3-bar .w3-button {
   padding: 16px;
+  margin-top: 20px;
 }
 
 .text-start{
   z-index: 20;
+}
+
+.w3-sidebar{
+  z-index: 100;
+}
+
+.logo{
+  width: 70px;
+}
+
+#home-a{
+  margin-top: 0px;
+}
+
+
+.contenedor-botones{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /* permite que bajen a otra línea si la pantalla es pequeña */
+  gap: 20px; /* opcional: espacio uniforme entre botones */
+}
+
+
+.plan-estudio{
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  flex-direction: column;  /* organiza contenido de arriba hacia abajo */
 }
