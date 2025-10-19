@@ -1,15 +1,13 @@
-.suelo-1{
-    background-position: top;
-    background-size: cover;
-    background-image: url(../assets/suelo1-3.png);
+.suelo-1 {
+  background: top/cover url(../assets/suelo1-3.png);
 }
 
-.text-plan-de-estudio{
-    padding: 10px 0px;
-    border-radius: 10px;
-    background-color: #00000060;
-    color: #fff; 
-    text-decoration:underline;
+.text-plan-de-estudio {
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #00000060;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .boton-con-texto h3{

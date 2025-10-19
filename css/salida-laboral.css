@@ -1,8 +1,61 @@
-.img-container-Sl img{
-    width: 200px;
+/* Sección general */
+.salida-laboral {
+  padding: 64px 16px;
 }
 
-.img-container-Sl{
-    padding: 5px;
-    height: 350px;
+/* Imagen dentro de las cards */
+.img-container-Sl img {
+  width: 100%;
+  height: 180px;
+  object-fit:contain;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Cards */
+.card-job .w3-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.card-job .w3-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .img-container-Sl img {
+    height: 200px; /* un poco más alta en mobile */
+  }
+  
+  .salida-laboral h3 {
+    font-size: 1.8rem;
+  }
+
+  .w3-container.w3-padding h4 {
+    font-size: 1.2rem;
+  }
+
+  .card-job {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .img-container-Sl img {
+    height: 160px;
+  }
+
+  .salida-laboral h3 {
+    font-size: 1.5rem;
+  }
+
+  .w3-container.w3-padding h4 {
+    font-size: 1rem;
+  }
 }
