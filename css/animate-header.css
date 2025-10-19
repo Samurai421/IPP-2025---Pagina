@@ -7,13 +7,6 @@
   background: linear-gradient(to top, #00CED1, #B0E0E6);
 }
 
-.cloud2-section {
-  position: relative;        /* Muy importante */
-  width: 100%;
-  height: 600px;             /* Altura que vos definas */
-  overflow: hidden;          /* Oculta lo que sale del contenedor */
-}
-
 /* 🌥 Fondo de nubes */
 .background-wrap {
   position: absolute;
