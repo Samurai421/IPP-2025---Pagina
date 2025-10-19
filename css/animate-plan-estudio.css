@@ -1,0 +1,61 @@
+/* 📌 Contenedor de la sección */
+.plan-section {
+  position: relative;        /* Muy importante */
+  width: 100%;
+  height: auto;             /* Altura que vos definas */
+  overflow: hidden;          /* Oculta lo que sale del contenedor */
+}
+
+/* 🌥 Fondo de nubes */
+.plan-section .background-wrap {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Nubes */
+.plan-enemy {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  scale: 1.5;
+  z-index: 0;
+}
+
+.plan-enemy img {
+  pointer-events: none;
+  z-index: 0;
+  height: auto;
+}
+
+/* ⏳ Keyframes */
+@keyframes FloatH {
+  0% {
+    transform: translateX(-180%) ;
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+
+/* Animaciones individuales*/
+.plan-x1 { animation: FloatH 25s linear infinite, sideWays 2s ease-in-out infinite alternate; left: -5%;  top: 5%;  transform: scale(0.6); }
+.plan-x2 { animation: FloatH 20s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 5%;   top: 80%; transform: scale(0.4); }
+.plan-x3 { animation: FloatH 28s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 10%;  top: 40%; transform: scale(0.7); }
+.plan-x4 { animation: FloatH 22s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 20%;  top: 0;   transform: scale(0.3); }
+.plan-x5 { animation: FloatH 29s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 30%;  top: 50%; transform: scale(0.5); }
+.plan-x6 { animation: FloatH 21s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 50%;  top: 0;   transform: scale(0.8); }
+.plan-x7 { animation: FloatH 20s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 65%;  top: 70%; transform: scale(0.4); }
+.plan-x8 { animation: FloatH 22s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 80%;  top: 10%; transform: scale(0.3); }
+.plan-x9 { animation: FloatH 29s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 90%;  top: 50%; transform: scale(0.6); }
+.plan-x10{ animation: FloatH 26s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 80%;  top: 80%; transform: scale(0.3); }
+
+
+
+.plan-content{
+    position: relative;   /* <--- necesario para que z-index funcione */
+    z-index: 10;          
+}
