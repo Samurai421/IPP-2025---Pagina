@@ -1,0 +1,39 @@
+/* ================================
+   ⚡ CUSTOM CSS — Overrides
+   Capa para manipular estilos sin tocar los originales
+   ================================ */
+
+/* 🧭 Header */
+header div span {
+  /* Ejemplo: cambiar alto o fondo */
+  /* height: 700px; */
+  /* background: red; */
+  color: black;
+  font-family: monospace;
+}
+
+header section div p a {
+  /* Ejemplo: cambiar alto o fondo */
+  /* height: 700px; */
+  /* background: red; */
+  color: black;
+  font-family: monospace;
+}
+
+
+
+#about p{
+    margin-bottom: 50px;
+}
+
+#about .w3-large{
+    margin: -10px !important;
+}
+
+.cloud-section{
+  height: 100vh;
+  z-index: 10000;
+}
+
+
+.m3-white{color:#000!important;background-color:#F1FFE5!important}
