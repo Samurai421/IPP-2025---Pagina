@@ -1,0 +1,102 @@
+/* 📌 Contenedor de la sección */
+.cloud-section {
+  position: relative;        /* Muy importante */
+  width: 100%;
+  height: 600px;             /* Altura que vos definas */
+  overflow: hidden;          /* Oculta lo que sale del contenedor */
+  background: linear-gradient(to top, #00CED1, #B0E0E6);
+}
+
+/* 🌥 Fondo de nubes */
+.background-wrap {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Nubes */
+.cloud {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  transform: scale(0.5);
+}
+
+.cloud img {
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.goomba {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  transform: scale(0.5);
+}
+
+.goomba img {
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lakitu {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  transform: scale(0.5);
+}
+
+.lakitu img {
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ⏳ Keyframes */
+@keyframes FloatUp {
+  0% {
+    transform: translateY(120%) translateX(0);
+  }
+  100% {
+    transform: translateY(-180%) translateX(50px);
+  }
+}
+
+
+
+/* Animaciones individuales*/
+.x1 { animation: FloatUp 25s linear infinite, sideWays 2s ease-in-out infinite alternate; left: -5%;  top: 5%;  transform: scale(0.6); }
+.x2 { animation: FloatUp 20s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 5%;   top: 80%; transform: scale(0.4); }
+.x3 { animation: FloatUp 28s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 10%;  top: 40%; transform: scale(0.7); }
+.x4 { animation: FloatUp 22s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 20%;  top: 0;   transform: scale(0.3); }
+.x5 { animation: FloatUp 29s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 30%;  top: 50%; transform: scale(0.5); }
+.x6 { animation: FloatUp 21s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 50%;  top: 0;   transform: scale(0.8); }
+.x7 { animation: FloatUp 20s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 65%;  top: 70%; transform: scale(0.4); }
+.x8 { animation: FloatUp 22s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 80%;  top: 10%; transform: scale(0.3); }
+.x9 { animation: FloatUp 29s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 90%;  top: 50%; transform: scale(0.6); }
+.x10{ animation: FloatUp 26s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 80%;  top: 80%; transform: scale(0.3); }
+
+/* 🪄 Elementos especiales */
+/* goomba */
+.y1 { animation: FloatUp 20s linear infinite, sideWays 2s ease-in-out infinite; left: 10%; top: 60%}
+.y2 { animation: FloatUp 23s linear infinite, sideWays 3s ease-in-out infinite; left: 40%; top: 70%}
+.y3 { animation: FloatUp 26s linear infinite, sideWays 4s ease-in-out infinite; left: 70%; top: 80%}
+
+
+/*extra*/
+.y4 { animation: FloatUp 22s linear infinite, sideWays 2s ease-in-out infinite; left: 23%; top: 60%; transform: scale(0.4)}
+.y5 { animation: FloatUp 29s linear infinite, sideWays 3s ease-in-out infinite; left: 46%; top: 70%; transform: scale(0.3)}
+.y6 { animation: FloatUp 21s linear infinite, sideWays 4s ease-in-out infinite; left: 78%; top: 80%; transform: scale(0.6)}
+
+
+.content{
+    position: relative;   /* <--- necesario para que z-index funcione */
+    z-index: 10;          
+}
