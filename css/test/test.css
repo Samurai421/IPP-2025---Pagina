@@ -86,3 +86,137 @@
     position: relative;   /* <--- necesario para que z-index funcione */
     z-index: 10;          
 }
+
+/* Overlay oscuro */
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Botón expansible */
+.expandable-button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Ocultar info dentro del botón */
+.button-content .info {
+    display: none;
+}
+
+/* Modal centrado y animado */
+.modal-content {
+    background: #4CAF50;
+    color: white;
+    border-radius: 16px;
+    padding: 32px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    transform: scale(0);
+    animation: zoomIn 0.4s forwards;
+}
+
+/* Animación personalizada */
+@keyframes zoomIn {
+    0% { transform: scale(0.1); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Botón de cerrar siempre visible */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Scroll invisible pero funcional */
+.modal-content::-webkit-scrollbar { width: 0; }
+.modal-content { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Responsive */
+@media (max-width:768px){
+    .modal-content{width:95%; padding:24px;}
+}
+
+
+/* Bloque estilo Mario Bros */
+.mario-block {
+    width: 100px;
+    height: 100px;
+    background: #f9d71c; /* amarillo */
+    border: 4px solid #cfa613; /* borde más oscuro */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px #b89f10; /* efecto 3D */
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Símbolo "?" */
+.mario-block .block-symbol {
+    font-family: 'Press Start 2P', cursive; /* tipo pixel retro */
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 1px 1px #cfa613;
+    animation: blink 1s infinite;
+}
+
+/* Efecto hover: levita un poco y cambia sombra */
+.mario-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px #b89f10;
+}
+
+/* Animación del símbolo */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Puntitos blancos en las esquinas */
+.mario-block .dot {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    border-radius: 2px;
+}
+
+/* Posiciones */
+.mario-block .top-left { top: 8px; left: 8px; }
+.mario-block .top-right { top: 8px; right: 8px; }
+.mario-block .bottom-left { bottom: 8px; left: 8px; }
+.mario-block .bottom-right { bottom: 8px; right: 8px; }
