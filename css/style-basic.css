@@ -39,9 +39,8 @@ scroll-behavior: smooth;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap; /* permite que bajen a otra línea si la pantalla es pequeña */
-  gap: 20px; /* opcional: espacio uniforme entre botones */
 }
 
 
