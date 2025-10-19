@@ -1,0 +1,30 @@
+.suelo-1{
+    background-position: top;
+    background-size: cover;
+    background-image: url(../assets/suelo1-3.png);
+}
+
+.text-plan-de-estudio{
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: #00000060;
+    color: #fff; 
+    text-decoration:underline;
+}
+
+.boton-con-texto h3{
+    color: #fff; 
+    text-decoration:overline;
+}
+
+.boton-con-texto {
+    /* offset-x | offset-y | blur-radius | color */
+    border-radius: 10px;
+    background-color: #00000060;
+    padding: 5px;
+}
+
+#team{
+    margin-top: -2px;
+    border-top: 2px solid black;
+}

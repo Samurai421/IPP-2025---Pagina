@@ -5,6 +5,10 @@ body, html {
   line-height: 1.8;
 }
 
+.nav{
+  z-index: 500;
+}
+
 html {
 scroll-behavior: smooth;
 }

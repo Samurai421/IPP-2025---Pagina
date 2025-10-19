@@ -7,6 +7,13 @@
   background: linear-gradient(to top, #00CED1, #B0E0E6);
 }
 
+.cloud2-section {
+  position: relative;        /* Muy importante */
+  width: 100%;
+  height: 600px;             /* Altura que vos definas */
+  overflow: hidden;          /* Oculta lo que sale del contenedor */
+}
+
 /* 🌥 Fondo de nubes */
 .background-wrap {
   position: absolute;
@@ -62,7 +69,7 @@
 /* ⏳ Keyframes */
 @keyframes FloatUp {
   0% {
-    transform: translateY(120%) translateX(0);
+    transform: translateY(120%) translateX(0px);
   }
   100% {
     transform: translateY(-180%) translateX(50px);
