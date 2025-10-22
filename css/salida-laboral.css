@@ -1,6 +1,13 @@
+
+
 /* Sección general */
 .salida-laboral {
   padding: 64px 16px;
+  z-index: 100;
+}
+
+.font-pixel{
+  font-family: 'Pixelify Sans';
 }
 
 /* Imagen dentro de las cards */
@@ -20,6 +27,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s ease;
+  border: 2px solid black;
 }
 
 .card-job .w3-card:hover {

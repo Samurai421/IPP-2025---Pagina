@@ -1,0 +1,59 @@
+/* 📌 Contenedor de la sección */
+.mario-section {
+  position: relative;        /* Muy importante */
+  width: 100%;
+  height: auto;             /* Altura que vos definas */
+  overflow: hidden;          /* Oculta lo que sale del contenedor */
+}
+
+/* 🌥 Fondo de nubes */
+.mario-section .background-wrap {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  z-index: 20;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Nubes */
+.mario {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  scale: 1;
+  z-index: 20;
+  margin-top: -36px;
+}
+
+.mario img {
+  pointer-events: none;
+  z-index: 20;
+  height: auto;
+}
+
+/* ⏳ Keyframes */
+@keyframes MarioFloatH {
+  0% {
+    transform: translateX(-70vh) ;
+  }
+  
+  90% {
+    transform: translateX(200vh);
+  }
+
+  100%{
+    transform: translateX(210vh);
+  }
+}
+
+
+/* Animaciones individuales*/
+.mario-x10{ animation: MarioFloatH 8s linear infinite, sideWays 1s ease-in-out infinite alternate; left: 10%;  top: 80%; transform: scale(0.3);}
+
+
+
+.mario-content{
+    position: relative;   /* <--- necesario para que z-index funcione */
+    padding: 40px;
+    z-index: 10;          
+}

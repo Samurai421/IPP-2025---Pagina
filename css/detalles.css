@@ -2,6 +2,11 @@
   background: top/cover url(../assets/suelo1-3.png);
 }
 
+.suelo-2 {
+  background: top url(../assets/suelo2-3.png);
+  padding: 50px 0px;
+}
+
 .text-plan-de-estudio {
   padding: 10px 0;
   border-radius: 10px;
@@ -26,4 +31,26 @@
 #team{
     margin-top: -2px;
     border-top: 2px solid black;
+}
+
+.m3-azul{
+  background-color: #E0FFFF;
+}
+
+
+.mont-content{
+  position: relative;
+  margin-bottom: -43px;
+}
+
+.mont-deco{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: -34px;
+}
+
+.mont-baja{
+  margin-top: 10px;
 }
