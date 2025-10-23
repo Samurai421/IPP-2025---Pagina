@@ -34,15 +34,11 @@
 /* ⏳ Keyframes */
 @keyframes MarioFloatH {
   0% {
-    transform: translateX(-70vh) ;
-  }
-  
-  90% {
-    transform: translateX(200vh);
+    transform: translateX(-50vw) ;
   }
 
   100%{
-    transform: translateX(210vh);
+    transform: translateX(110vw);
   }
 }
 
@@ -56,4 +52,18 @@
     position: relative;   /* <--- necesario para que z-index funcione */
     padding: 40px;
     z-index: 10;          
+}
+
+@media (max-width: 768px) {
+@keyframes MarioFloatH {
+  0% {
+    transform: translateX(-50vw) ;
+  }
+
+  100%{
+    transform: translateX(100vw);
+  }
+}
+
+.mario-x10{ animation: MarioFloatH 4s linear infinite, sideWays 1s ease-in-out infinite alternate; left: 10%;  top: 80%; transform: scale(0.3);}
 }
