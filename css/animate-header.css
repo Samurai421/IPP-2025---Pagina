@@ -62,10 +62,14 @@
 /* ⏳ Keyframes */
 @keyframes FloatUp {
   0% {
-    transform: translateY(120%) translateX(0px);
+    transform: translateY(100vh) translateX(0vw);
+  }
+
+  10%{
+    transform: translateY(80vh), translateX(3vw);
   }
   100% {
-    transform: translateY(-180%) translateX(50px);
+    transform: translateY(-110vh) translateX(20vw);
   }
 }
 
